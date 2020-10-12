@@ -12,6 +12,8 @@ root = Tk()
 root.title("Library Management System")
 root.state("zoomed")
 root.geometry("1920x1080")
+s = ttk.Style()
+s.theme_use('vista')
 # root.iconbitmap(r'Icon.ico')
 state1='disabled'
 state2='disabled'
@@ -945,15 +947,15 @@ def View():
     except:
         messagebox.showinfo("Error","Can't fetch data from database")
 ################################## Frames #########################################################################
-headingFrame = Frame(root,bd=20, relief=RIDGE)
+headingFrame = Frame(root,bd=10, relief=RIDGE)
 headingFrame.place(relx=0,rely=0,relwidth=1,relheight=0.2)
 heading=Label(headingFrame,font=('Times New ROman', 40, 'bold'), text="Library Management System")
 heading.place(relx=0, rely=0.2)
-moduleFrame = Frame(root,bd=20, relief=RIDGE)
+moduleFrame = Frame(root,bd=10, relief=RIDGE)
 moduleFrame.place(relx=0,rely=0.2,relwidth=0.2,relheight=0.8)
 headingLabel = Label(moduleFrame, text="MENU",font=("Times New Roman",26,'bold'))
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=0.15)
-dFrame= Frame(root,bd=20, relief=RIDGE)
+dFrame= Frame(root,bd=10, relief=RIDGE)
 dFrame.place(relx=0.2,rely=0.2,relwidth=0.8,relheight=0.8)
 displayFrame=Frame(dFrame, bd=10, relief=SOLID, bg='white')
 displayFrame.place(relx=0.2,rely=0.05, relwidth=0.6, relheight=0.9)
