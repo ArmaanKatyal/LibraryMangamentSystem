@@ -1,6 +1,7 @@
 # Library Management System
 
-Library Management System for Schools
+GUI-based software for school/university libraries to maintain book and Student Records. 
+Successful implementation in High-School with 800 Students.
 
 ## Installation
 
@@ -11,10 +12,7 @@ pip install tkinter
 ```
 ## Usage
 
-```python
-from tkinter import *
-from tkinter import ttk
-import sqlite3
-from tkinter import messagebox
-import os
+```bash
+python3 Library Management System.py
 ```
+Database File will automatically be created in your Documents folder named 'Library Database'
